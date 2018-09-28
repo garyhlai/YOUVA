@@ -1,0 +1,13 @@
+.row.display-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.thumbnail {
+	height: 100%;
+}
+
+.thumbnail > img {
+	height: 100%;
+	width: 100%;
+}
