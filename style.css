@@ -11,3 +11,182 @@
 	height: 100%;
 	width: 100%;
 }
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.navbar-default {
+    margin-bottom: 0px;
+}
+
+.wrapper {
+    margin-top: 0px;
+    margin-right: 0px;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+#sidebar.active {
+    margin-left: -200px;
+}
+
+#navbar1 {z-index: 1000;}
+#navbar2 {z-index: 999;}
+
+
+/* For the Side Bar */
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+#sidebar {
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100vh;
+}
+
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+
+#sidebar ul.components {
+    padding: 20px;
+    border-bottom: 1px solid #47748b;
+}
+
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
