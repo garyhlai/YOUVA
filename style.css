@@ -1,18 +1,14 @@
+@import 'normalize.css';
+
+
+
+
 /*For the slideshow on homepage*/
 
 .carousel-inner > .item > img {
   width:800px;
   height:700px;
 }
-
-/*
-.carousel-caption h3 {
-  color: #212529; ;
-}
-.carousel-caption h5 {
-  color: #212529; ;
-}
-*/
 
 #toCenter {
     text-align: center;
@@ -32,23 +28,21 @@ p {
     width: 30%;
 }
 
-/*
-.scaleable-wrapper {
-    resize: both;
-    position: relative;
-}
-*/
-
 
 .row.display-flex {
 	display: flex;
 	flex-wrap: wrap;
 }
 
+.display-flex.container:before,
+.display-flex.container:after,
+.display-flex.row:before,
+.display-flex.row:after {
+   content: normal; 
+}
 
 .thumbnail {
 	height: 100%
-
 }
 
 .thumbnail > img {
@@ -60,26 +54,18 @@ p {
     overflow: auto;
 }
 
-
-
 #wrap{
     margin:0 auto; 
 }
 
 #sidebar.active {
-    margin-left: -200px;
+    margin-left: -1000px;
 }
-
 
 .navbar-default .navbar-brand {
     color: #212529;  
 }
 
-/*
-#navbar1 {
-    z-index: 1000;  
-}
-*/
 .navbar-default .navbar-nav>li>a
 {
     color: #212529;  
