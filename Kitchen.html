@@ -13,6 +13,7 @@
 
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleProduct.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -53,15 +54,19 @@
 			</div>
 		</nav>
 	
-
+<!--
+<div class="scaleable-wrapper" id="scaleable-wrapper">
+	<div class="very-specific-design" id="very-specific-design">
+-->
+	<div class="container">
 		<p>CIFRE</p>
-
+	</div>
 
     <!-- Sidebar -->
-
-    <div class="wrapper"> 
+    
+   <!-- <div class="wrapper">--> 
+   	<div class="container">
 	    <nav id="sidebar">
-	  
 	        <ul class="list-unstyled components">
 	            <li class="active">
 	                <a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cifre</a>
@@ -122,100 +127,81 @@
 	    </nav>
 	</div>
 
-
-	<!--Toggle-->
-		<!--<div id="content">-->
-			
-		    <!--<nav id="navbar2" class="navbar navbar-expand-lg navbar-light bg-light">-->
-		            <!--<div class="container-fluid">
-		                <button type="button" id="sidebarCollapse" class="btn btn-info">
-		                    <i class="fas fa-align-left"></i>
-		                    <span>品牌</span>
-		                </button> -->
-		            <!--</div>-->
-		    <!--</nav> -->
 	
+	<div class="container">
 	<div class="toggleBar">
 		<button type="button" id="sidebarCollapse" class="btn btn-outline-light">
 		        <i class="fas fa-align-left"></i>
 		            <span>品牌</span>
 		</button>
 	</div>            
+</div>
 
+
+	<!--modal-->
+
+	<div id="myModal" class="modal">
+					<span id="close">&times;</span>	
+					<img class="modal-content" id="img">
+					<div id="caption"></div>
+					<a id="prev">&#10094;</a>
+					<a id="next">&#10095;</a>
+	</div>	
 
 	<!--Images-->
 	<div class="container" id="Cifre">
 	<div class="row display-flex">
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 1.jpg">
+				<img class="myImg" src="Kitchen_Cifre_1.jpg" alt="Kitchen_Cifre_1">
+				
 			</div>
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 2.jpg">
-			</div>	
+				<img class="myImg" src="Kitchen_Cifre_2.jpg" alt="Kitchen_Cifre_2">
+				<!--
+				<div id="myModal" class="modal">
+					<span id="close">&times;</span>	
+					<img class="modal-content" id="img2">
+					<div id="caption"></div>
+					<a id="prev">&#10094;</a>
+					<a id="next">&#10095;</a>
+
+				</div>	
+			-->
+			</div>
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 3.jpg">
-			</div>	
+				<img class="myImg" src="Kitchen_Cifre_3.jpg" alt="Kitchen_Cifre_3">
+				<!--
+				<div id="myModal" class="modal">
+					<span id="close">&times;</span>	
+					<img class="modal-content" id="img3">
+					<div id="caption"></div>
+					<a id="prev">&#10094;</a>
+					<a id="next">&#10095;</a>
+				</div>
+				-->	
+			</div>
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 4.jpg">
-			</div>	
-		</div>
-		
-		<div class="col-lg-3">
-			<div class="thumbnail">
-				<img src="imagen 5.jpg">
-			</div>	
-		</div>
-
-		<div class="col-lg-3">
-			<div class="thumbnail">
-				<img src="imagen 6.jpg">
-			</div>	
-		</div>
-
-		<div class="col-lg-3">
-			<div class="thumbnail">
-				<img src="imagen 7.jpg">
-			</div>	
-		</div>
-
-		<div class="col-lg-3">
-			<div class="thumbnail">
-				<img src="imagen 8.jpg">
-			</div>	
-		</div>
-
-		<div class="col-lg-3">
-			<div class="thumbnail">
-				<img src="imagen 9.jpg">
-			</div>	
-		</div>
-
-		<div class="col-lg-3">
-			<div class="thumbnail">
-				<img src="imagen 7.jpg">
-			</div>	
-		</div>
-
-		<div class="col-lg-3">
-			<div class="thumbnail">
-				<img src="imagen 8.jpg">
-			</div>	
-		</div>
-
-		<div class="col-lg-3">
-			<div class="thumbnail">
-				<img src="imagen 9.jpg">
-			</div>	
+				<img class="myImg" src="Kitchen_Cifre_4.jpg" alt="Kitchen_Cifre_4">
+				<!--
+				<div id="myModal" class="modal">
+					<span id="close">&times;</span>	
+					<img class="modal-content" id="img4">
+					<div id="caption"></div>
+					<a id="prev">&#10094;</a>
+					<a id="next">&#10095;</a>
+				</div>	
+			-->
+			</div>
 		</div>
 
 	</div>
@@ -226,81 +212,82 @@
 	
 	<!--</div>-->
 	
-
+	<div class="container">
 	<p><br>
 	AZUVI</p>
+	</div>
 
 	<div class="container" id="Azuvi">
 	<div class="row display-flex">
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 1.jpg">
+				<img src="Kitchen_Cifre_1.jpg">
 			</div>
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 2.jpg">
+				<img src="Kitchen_Cifre_2.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 3.jpg">
+				<img src="Kitchen_Cifre_3.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 4.jpg">
+				<img src="Kitchen_Cifre_4.jpg">
 			</div>	
 		</div>
 		
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 5.jpg">
+				<img src="Kitchen_Cifre_5.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 6.jpg">
+				<img src="Kitchen_Cifre_6.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 7.jpg">
+				<img src="Kitchen_Cifre_7.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 8.jpg">
+				<img src="Kitchen_Cifre_8.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 9.jpg">
+				<img src="Kitchen_Cifre_9.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 7.jpg">
+				<img src="Kitchen_Cifre_7.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 8.jpg">
+				<img src="Kitchen_Cifre_8.jpg">
 			</div>	
 		</div>
 
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-sm-6 col-ex-12">
 			<div class="thumbnail">
-				<img src="imagen 9.jpg">
+				<img src="Kitchen_Cifre_9.jpg">
 			</div>	
 		</div>
 		
@@ -308,7 +295,10 @@
 
 	</div>
 
-
+<!--
+</div>
+</div>
+-->
  	<!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
@@ -325,7 +315,9 @@
         });
     </script>
 
-	<script src="Modal.js"></script>	
+	<script src="Modal.js"></script>
+	<!--<script src="resize.js"></script>-->
+
 
 </body>
 </html>
