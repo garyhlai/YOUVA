@@ -2,3 +2,9 @@
 	text-align: center;
 	padding-top: 10%;
 }
+
+.thumbnail {
+	height: 80%;
+	width: 80%;
+	text-align: center;
+}
