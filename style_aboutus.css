@@ -1,7 +1,14 @@
+/*
+#text {
+	text-align: left;
+	margin: 0 auto;
+}
+*/
 #content {
 	text-align: center;
 	padding-top: 10%;
 }
+
 
 .thumbnail {
 	height: 80%;
