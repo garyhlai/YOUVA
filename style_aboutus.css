@@ -1,0 +1,41 @@
+/*
+#text {
+	text-align: left;
+	margin: 0 auto;
+}
+*/
+/*
+p {
+	margin-top: ;
+}
+*/
+
+.decrease{
+	margin-top: -3px;
+}
+
+.decrease2{
+	margin-top: -10px;
+}
+
+p {
+	margin-bottom: 25px;
+}
+h4 {
+	margin-bottom: 15px;
+}
+
+#LOGO {
+	text-align: center;
+}
+#content {
+	text-align: left;
+	padding-top: 3%;
+}
+
+
+.thumbnail {
+	height: 80%;
+	width: 80%;
+	text-align: center;
+}
