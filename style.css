@@ -2,6 +2,16 @@
 
 
 
+#footer { 
+    display: table;
+    text-align: center;
+    margin-top: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+}
+
+
 
 /*For the slideshow on homepage*/
 
@@ -77,17 +87,6 @@ p {
 #navbar1 ul {
     color: #212529;  
 }
-
-
-/*
-#navbar2 {
-    z-index: 999;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;    
-    margin-bottom: 0px;
-}
-*/
 
 .toggleBar {
    padding-top: 5px;
