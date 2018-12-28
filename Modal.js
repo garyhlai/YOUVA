@@ -16,8 +16,6 @@ var nextName;
 var prevNumber;
 var prevName;
 
-
-
 var next = document.getElementById('next');
 var prev = document.getElementById('prev');
 
@@ -28,11 +26,6 @@ $('.myImg').click(function(){
 	currentName = modalImg.src;
 	captionText.innerHTML = this.alt;
 	subCaption = this.alt;
-
-
-
-
-
 
 	//get the substring you're aiming at 
 	counter = 0;
@@ -52,12 +45,7 @@ $('.myImg').click(function(){
 	nextName = currentName.substring(0,numberTracker) + nextNumber + ".jpg";
 	prevNumber = Number(currentNumber) - 1;
 	prevName = currentName.substring(0,numberTracker) + prevNumber + ".jpg";
-
-
 });
-
-
-
 
 var span = document.getElementById("close");
 
@@ -65,12 +53,22 @@ span.onclick = function() {
 	modal.style.display = "none";
 }
 
+//check if image exists
+function ImageExist(url) 
+{
+   var img = new Image();
+     img.src = url;
+   return img.height != 0;
+}
+
+
 
 next.onclick = function() {
 
+	if (ImageExist(nextName)){
 	modalImg.src = nextName;
 	//set the caption
-	subCaption = subCaption.substring(0, (subCaption.length-1)) + nextNumber;
+	subCaption = subCaption.substr(0, subCaption.lastIndexOf('_')+1) + nextNumber;
 	captionText.innerHTML = subCaption;
 	//update the current name
 	currentName = nextName;
@@ -81,12 +79,14 @@ next.onclick = function() {
 	nextName = currentName.substring(0,numberTracker) + nextNumber + ".jpg";
 	prevName = currentName.substring(0,numberTracker) + prevNumber + ".jpg";
 }
+}
 
 
 prev.onclick = function() {
+	if (ImageExist(prevName)){
 	modalImg.src = prevName;
 	//set the caption
-	subCaption = subCaption.substring(0, (subCaption.length-1)) + prevNumber;
+	subCaption = subCaption.substr(0, subCaption.lastIndexOf('_')+1) + prevNumber;
 	captionText.innerHTML = subCaption;
 	
 	//update the current name
@@ -97,6 +97,6 @@ prev.onclick = function() {
 	prevNumber = Number(prevNumber) - 1;
 	nextName = currentName.substring(0,numberTracker) + nextNumber + ".jpg";
 	prevName = currentName.substring(0,numberTracker) + prevNumber + ".jpg";
-
+}
 }
 
